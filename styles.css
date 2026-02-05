@@ -802,3 +802,22 @@ body {
   padding: 0;
 }
 
+
+/* =========================
+   HEADER IMAGE FIX (MOBILE)
+   ========================= */
+@media (max-width: 768px) {
+  .header__image {
+    grid-area: auto;            /* stop grid positioning */
+    transform: none;            /* stop pushing right */
+    justify-self: center;       /* if grid is still active */
+    margin: 0 auto;             /* center container */
+  }
+
+  .header__image img {
+    width: min(320px, 90%);     /* fit screen */
+    height: auto;               /* remove fixed height (prevents big empty space) */
+    aspect-ratio: 4 / 5;        /* keep nice portrait ratio */
+    object-position: 55% 20%;   /* keep head visible */
+  }
+}
