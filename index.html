@@ -1,940 +1,775 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Dr. Maharati Personal Web site | Amir</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__bar">
-        <a href="#"><span class="logo nav__logo">A</span> Amir</a>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
-      </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Amir H. Maharati, MD | Cancer Genomics &amp; Non-coding RNA Research</title>
+
+<meta name="description" content="Amir H. Maharati, MD — physician and researcher in clinical oncology, non-coding RNA biomarkers, RNA-seq and single-cell analysis. Mashhad, Iran." />
+<meta name="author" content="Amir H. Maharati" />
+<link rel="canonical" href="https://amirmaharati.github.io/" />
+
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Amir H. Maharati, MD" />
+<meta property="og:description" content="Physician-scientist working on non-coding RNAs as diagnostic and prognostic biomarkers in human tumors." />
+<meta property="og:url" content="https://amirmaharati.github.io/" />
+<meta property="og:image" content="https://amirmaharati.github.io/assets/about.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta name="theme-color" content="#171A2E" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#101223" media="(prefers-color-scheme: dark)" />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+
+<script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="rail" aria-hidden="true"><span class="rail__fill" id="rail-fill"></span></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">AM</span>
+      <span class="brand__name">Amir H. Maharati<span class="brand__deg">, MD</span></span>
+    </a>
+
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span class="menu-btn__bars" aria-hidden="true"><i></i><i></i></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul class="nav__list">
         <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#service">Skills & Expertise</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#courses">Courses & Speeches</a></li>
+        <li><a href="#record">Record</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact" class="btn">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn btn__large">Contact</a>
+      <a class="btn btn--ghost nav__cta" href="#contact">Contact</a>
     </nav>
-    <header class="section__container header__container" id="home">
-      <div class="header__image">
-        <img src="assets/header.jpg" alt="header" />
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow reveal">Physician &middot; Cancer genomics &middot; Mashhad, Iran</p>
+      <h1 class="hero__name reveal">
+        Amir Hosein<br /><span class="hero__surname">Maharati</span><span class="hero__deg">MD</span>
+      </h1>
+      <p class="hero__lede reveal">
+        I treat oncology patients and study why their tumours resist therapy. My work
+        maps non-coding RNAs to diagnosis and prognosis in human tumours, using
+        RNA-seq and single-cell analysis to connect the bench to the clinic.
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--solid" href="assets/CV-Main.pdf" download>
+          Download CV <span class="btn__ext" aria-hidden="true">PDF</span>
+        </a>
+        <a class="btn btn--ghost" href="https://scholar.google.com/citations?hl=en&amp;user=7FMbGUwAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">
+          Google Scholar <span class="ext" aria-hidden="true">&#8599;</span>
+        </a>
       </div>
-      <div class="header__content">
-        <div>
-          <h1>Amir H. Maharati <br />Medical Doctor<br />Researcher</h1>
-        </div>
-        <p class="section__description">
-         Medical Doctor and researcher working in an Oncology Clinic, assisting in patient
-         care and chemotherapy planning. My research focuses on non-coding RNAs as
-         biomarkers in human tumors, with strong interests in bioinformatics,
-         multi-omics, sequencing technologies, and cancer biology.
+    </div>
 
-
-        </p>
-        <div class="header__btn">
-          <a href="assets/CV-Main.pdf" class="btn" download>Download CV</a>
-        </div>
+    <figure class="hero__portrait reveal" id="portrait">
+      <div class="hero__frame">
+        <img src="assets/header.jpg" width="840" height="1050"
+             alt="Amir Hosein Maharati" fetchpriority="high" decoding="async" />
       </div>
-    </header>
+    </figure>
+  </div>
 
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
-        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
-        <img src="assets/about.jpg" alt="about" class="about__img" />
-      </div>
-      <div class="about__content">
-        <h2 class="section__header">Bit About Me</h2>
-        <p class="section__description">
-         <p class="section__description">
-I am a Medical Doctor and young researcher currently working in an Oncology Clinic,
-where I assist in oncology patient management and chemotherapy planning. My
-research is focused on identifying non-coding RNAs as diagnostic and prognostic
-biomarkers in human tumors.
-
-I have extensive experience in cancer biology, molecular genetics, and
-bioinformatics, including RNA-seq and single-cell analysis. Beyond medicine and
-research, I am deeply interested in theater and the arts, and I strive to make a
-meaningful and lasting impact in the lives of cancer patients.
-
-</p>
-      
-    </section>
-
-    <section class="section__container" id="education">
-  <h2 class="section__header">Education</h2>
-
-  <div style="display: grid; gap: 1rem; margin-top: 1.5rem;">
-    <div class="service__card">
-  <h4>Doctor of Medicine (M.D.)</h4>
-
-  <p class="section__description">
-    Mashhad University of Medical Sciences — Mashhad, Iran
-  </p>
-
-  <p class="section__description">
-    <strong>2018 – 2025</strong> • GPA: <strong>3.84/4</strong> (18.12/20)
-  </p>
-</div>
+  <!-- Signature: coverage track. Bar heights encode the publication record by year. -->
+  <div class="track" id="track" role="img"
+       aria-label="Publication record: one bar per paper, grouped by year, bar height scaled to journal impact factor.">
+    <div class="track__groups" id="track-groups"></div>
   </div>
 </section>
 
-<section class="section__container" id="awards">
-  <h2 class="section__header">Awards & Achievements</h2>
-
-  <div style="display: grid; gap: 1rem; margin-top: 1.5rem;">
-    
-    <div class="service__card">
-      <h4>Annual Top Researcher Award</h4>
-
-      <p class="section__description">
-        Mashhad University of Medical Sciences
-      </p>
-
-      <p class="section__description">
-        <strong>December 2023</strong>
-      </p>
+<section class="figures" aria-label="Key figures">
+  <div class="wrap figures__grid">
+    <div class="figure reveal">
+      <span class="figure__num" data-count="34">34</span>
+      <span class="figure__label">Peer-reviewed publications</span>
     </div>
-
-    <div class="service__card">
-      <h4>Top Researcher of the Country (Medical Sciences)</h4>
-
-      <p class="section__description">
-        Ministry of Health and Medical Education
-      </p>
-
-      <p class="section__description">
-        <strong>December 2025</strong>
-      </p>
+    <div class="figure reveal">
+      <span class="figure__num" data-count="30">30</span><span class="figure__plus">+</span>
+      <span class="figure__label">Manuscripts reviewed for Springer Nature &amp; Wiley</span>
     </div>
-
-  </div>
-</section>
-
-    <section class="section__container service__container" id="service">
-      <h2 class="section__header">Skills & Expertise</h2>
-      <div class="service__grid">
-   <div class="service__card">
-  <span><i class="ri-hospital-line"></i></span>
-  <h4>Clinical Oncology</h4>
-  <p>Oncology patient management, chemotherapy planning, evidence-based practice.</p>
-</div>
-
-<div class="service__card">
-  <span><i class="ri-flask-line"></i></span>
-  <h4>Cancer Research</h4>
-  <p>Non-coding RNAs, cancer biomarkers, tumor biology, translational research.</p>
-</div>
-
-<div class="service__card">
-  <span><i class="ri-database-2-line"></i></span>
-  <h4>Bioinformatics</h4>
-  <p>RNA-seq, single-cell analysis, multi-omics data analysis.</p>
-</div>
-
-<div class="service__card">
-  <span><i class="ri-code-line"></i></span>
-  <h4>Programming & Tools</h4>
-  <p>R (advanced), Linux, SPSS, statistical data analysis.</p>
-</div>
-
-<div class="service__card">
-  <span><i class="ri-test-tube-line"></i></span>
-  <h4>Laboratory Techniques</h4>
-  <p>DNA/RNA extraction, PCR, cell culture, Western blot, MTT assay.</p>
-</div>
-
-<div class="service__card">
-  <span><i class="ri-team-line"></i></span>
-  <h4>Collaboration</h4>
-  <p>Multidisciplinary teamwork, academic collaboration, project management.</p>
-</div>
-
-      </div>
-    </section>
-
-<section class="section__container" id="experience">
-  <h2 class="section__header">Experience</h2>
-  <p class="section__description">
-    Clinical and research roles across oncology care, molecular genetics, and bioinformatics analysis.
-  </p>
-
-  <!-- Clinical Experience -->
-  <div class="exp__group">
-    <h3 class="exp__group__title">
-      <i class="ri-hospital-line"></i>
-      Clinical Experience
-    </h3>
-
-    <div class="exp__grid">
-      <!-- 1 -->
-      <div class="exp__card">
-        <div class="exp__top">
-          <span class="exp__icon"><i class="ri-hospital-line"></i></span>
-          <div>
-            <h4>Oncologist Assistant</h4>
-            <p class="exp__meta">
-              Shafa Oncology & Chemotherapy Center (Dr. Allahyari) <br />
-              Jun 2025 – Present
-            </p>
-          </div>
-        </div>
-        <ul class="exp__list">
-          <li>Oncology patient management<strong> (+ 1000 hours)</strong></li>
-          <li>Treatment planning & prescription</li>
-          <li>Evidence-based practice</li>
-          <li>Multidisciplinary collaboration</li>
-        </ul>
-      </div>
-
-      <!-- 3 -->
-      <div class="exp__card">
-        <div class="exp__top">
-          <span class="exp__icon"><i class="ri-stethoscope-line"></i></span>
-          <div>
-            <h4>Medical Intern</h4>
-            <p class="exp__meta">
-              Imam Reza & Ghaem Hospitals <br />
-              Oct 2023 – 2025
-            </p>
-          </div>
-        </div>
-        <ul class="exp__list">
-          <li>Clinical practice and patient care</li>
-        </ul>
-      </div>
+    <div class="figure reveal">
+      <span class="figure__num" data-count="1000">1000</span><span class="figure__plus">+</span>
+      <span class="figure__label">Hours of oncology patient management</span>
     </div>
-  </div>
-
-  <!-- Research Experience -->
-  <div class="exp__group">
-    <h3 class="exp__group__title">
-      <i class="ri-flask-line"></i>
-      Research Experience
-    </h3>
-
-    <div class="exp__grid">
-      <!-- 2 -->
-      <div class="exp__card">
-        <div class="exp__top">
-          <span class="exp__icon"><i class="ri-flask-line"></i></span>
-          <div>
-            <h4>Undergraduate Research Assistant</h4>
-            <p class="exp__meta">
-              Medical Genetics Research Center (MGRC) <br />
-              Jan 2020 – 2025
-            </p>
-          </div>
-        </div>
-        <ul class="exp__list">
-          <li><strong>Developed biobanks</strong> for colorectal cancer, Gastric cancer, Esophageal Squampus cell carcinoma,<br />
-             Papillary Thyroid carcinoma and Ovarian cancer</li>
-          <li>Directing all <strong></strong>bulk RNA-seq and Single cell sequencing</strong> data analysis projects at MGRC</li>
-        </ul>
-      </div>
-
-      <!-- 4 -->
-      <div class="exp__card">
-        <div class="exp__top">
-          <span class="exp__icon"><i class="ri-microscope-line"></i></span>
-          <div>
-            <h4>Post-doctoral Research Fellow</h4>
-            <p class="exp__meta">
-              Endoscopic & Minimally Invasive Research Center <br />
-              Apr 2025 – Present
-            </p>
-          </div>
-        </div>
-        <ul class="exp__list">
-          <li><strong>Systematic Review and Meta Analysis</strong></li>
-          <li>Linking the basic science and clinical division</li>
-        </ul>
-      </div>
-
-
-          <!-- Journal Reviewer -->
-    <div class="exp__card">
-      <div class="exp__top">
-        <span class="exp__icon"><i class="ri-book-open-line"></i></span>
-        <div>
-          <h4>Journal Reviewer</h4>
-          <p class="exp__meta">
-            Springer Nature & Wiley <br />
-            2023 – Present
-          </p>
-        </div>
-      </div>
-      <ul class="exp__list">
-        <li>Reviewed <strong>30+</strong> original and review articles</li>
-        <li>Research areas: cancer genetics, non-coding RNA, signaling pathways, and drug resistance</li>
-      </ul>
-    </div>
-
-    </div>
-  </div>
-
-
-  <!-- Other Experiences -->
-<div class="exp__group">
-  <h3 class="exp__group__title">
-    <i class="ri-star-line"></i>
-    Other Experiences
-  </h3>
-
-  <div class="exp__grid">
-    
-    <!-- Theater Director -->
-    <div class="exp__card">
-      <div class="exp__top">
-        <span class="exp__icon"><i class="ri-movie-line"></i></span>
-        <div>
-          <h4>Theater Director</h4>
-          <p class="exp__meta">
-            Mashhad University of Medical Sciences Theater Center <br />
-            Jan 2019 – Mar 2022
-          </p>
-        </div>
-      </div>
-
-      <ul class="exp__list">
-        <li>Performed 3 theaters as director and 1 theater as an actor</li>
-        <li>Developed training management, teamwork, and communication skills</li>
-      </ul>
-    </div>
-
-    <!-- Workout and Fitness Trainer -->
-    <div class="exp__card">
-      <div class="exp__top">
-        <span class="exp__icon"><i class="ri-run-line"></i></span>
-        <div>
-          <h4>Workout and Fitness Trainer</h4>
-          <p class="exp__meta">
-            Iran Bodybuilding and Fitness Federation  <br />
-            Oct 2022 – Present
-          </p>
-        </div>
-      </div>
-
-      <ul class="exp__list">
-        <li>Level 3 Certificate in Coaching</li>
-      </ul>
-    </div>
-
-  </div>
-</div>
-
-</section>
-
-
-<section class="section__container" id="courses">
-  <h2 class="section__header">Courses & Speeches</h2>
-
-  <div style="display: grid; gap: 1rem; margin-top: 1.5rem;">
-    <div class="service__card">
-      <h4>RNA extraction, Real-time PCR & cDNA synthesis</h4>
-      <p class="section__description">Medical Genetics Research Group</p>
-      <p class="section__description"><strong>August 2025</strong></p>
-    </div>
-
-    <div class="service__card">
-      <h4>AI in medicine and Urology</h4>
-      <p class="section__description">National Congress of Endourology</p>
-      <p class="section__description"><strong>November 2025</strong></p>
+    <div class="figure reveal">
+      <span class="figure__num" data-count="5">5</span>
+      <span class="figure__label">Tumour biobanks developed</span>
     </div>
   </div>
 </section>
 
-    <section class="section__container" id="publications">
-  <h2 class="section__header">Publications</h2>
-  <p class="section__description">
-    Selected peer-reviewed original articles, reviews, and case reports in cancer biology, non-coding RNAs, and therapy resistance.
-  </p>
-
-  <!-- Original Articles -->
-  <div class="pub__block">
-    <h3 class="pub__title">
-      <i class="ri-article-line"></i> Original Articles
-    </h3>
-
-    <ol class="pub__list">
-    
-      <li>
-          <a
-    href="https://doi.org/10.1016/j.taap.2023.116652"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        Zohreh Rezaei, Kazem Dastjerdi, Abolghasem Allahyari, Soodabeh ShahidSales, Sahar Talebian, <strong>Amirhosein Maharati</strong>, Alireza Zangooie, Amir Sadra Zangouei, Farzad Sadri, Saman Sargazi.
-        Plasma microRNA-195, −34c, and −1246 as novel biomarkers for the diagnosis of trastuzumab-resistant HER2-positive breast cancer patients.
-        <em>Toxicology and Applied Pharmacology</em>. <span class="pub__tag">IF: 4.4</span>
-        </a>
-      </li>
-
-      <li>
-
-                  <a
-    href="https://doi.org/10.1016/j.bbrep.2024.101843"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-
-        
-
-        <strong>Amirhosein Maharati</strong>, Negin Taghehchian, Fatemeh Taghavinia, Alireza Golshan, Azadeh Aarabi, Mohammad Reza Abbaszadegan, Meysam Moghbeli.
-        LINC01322 may serve as a potential diagnostic marker for advanced stage tumors in renal cell carcinoma patients eligible for total nephrectomy.
-        <em>Biochemistry and Biophysics Reports</em>. <span class="pub__tag">IF: 2.2</span>
-         </a>
-      </li>
-
-      <li>
-
-                  <a
-    href="https://doi.org/10.1038/s41598-025-30520-5"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        <strong>Amirhosein Maharati</strong>, Mohammad Javad Malekifar, Abbas Abdollahi, Negin Taghechian, Samaneh Sharif, Azadeh Aarabi, Malihe Lotfi, Mohammad Etezadpour, Mohammadreza Abbaszadegan.
-        CKAP2, miR-941, miR-548 and LINC02577 as biomarkers for early diagnosis in colorectal cancer.
-        <em>Scientific Reports</em>. <span class="pub__tag">IF: 3.9</span>
-         </a>
-      </li>
-
-      <li>
-         <a
-    href="https://doi.org/10.1016/j.ctarc.2025.101090"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-
-        
-
-        <strong>Amirhosein Maharati</strong>, Fatemeh Taghavinia, Alireza Golshan, Tina Azimi Kordiani, Meysam Moghbeli.
-        LINC01913 and LINC01389 as the novel diagnostic tumor markers for the early-stage renal cell carcinoma.
-        <em>Cancer Treatment and Research Communications</em>. <span class="pub__tag">IF: 2.9</span>
-         </a>
-      </li>
-
-      <li>
-        <a
-    href="https://doi.org/10.1186/s12894-025-01998-y"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-
-        
-
-        Negin Taghehchian, <strong>Amirhosein Maharati</strong>, Fatemeh Taghavinia, Alireza Golshan, Sepehr Salarzadeh, Meysam Moghbeli.
-        LINC00332 as a potential diagnostic marker for the low-grade tumors in renal cell carcinoma patients.
-        <em>BMC Urology</em>. <span class="pub__tag">IF: 1.6</span>
-        </a>
-      </li>
-
-      <li>
-        <a
-    href="https://doi.org/10.22099/mbrc.2025.52515.2107"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-
-        
-
-        Mohammad Hossein Khajavirad, <strong>Amirhosein Maharati</strong>, Negin Taghehchian, Fatemeh Taghavinia, Meysam Moghbeli.
-        Role of VOPP1 in regulation of Paclitaxel response and EMT process during ovarian tumor progression.
-        <em>Molecular Biology Research Communications</em>. <span class="pub__tag">IF: 1.75</span>
-         </a>
-      </li>
-
-      <li>
-        <a href="https://doi.org/10.1007/s40944-026-01093-6" target="_blank" rel="noopener" class="pub__link">
-        Faezeh Tolue Ghasaban, Negin Taghehchian, <strong>Amirhosein Maharati</strong>, Zahra Basirat, Meysam Moghbeli.
-        Role of KCTD12 in ovarian tumor progression and chemo resistance via regulation of WNT and NOTCH pathways.
-        <em>Indian Journal of Gynecologic Oncology</em>.
-        </a>
-      </li>
-    </ol>
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">01 &mdash; About</p>
+      <h2 class="head__title">Between the clinic and the sequencer</h2>
+    </div>
+    <div class="prose reveal">
+      <p>
+        I am a medical doctor and researcher working in an oncology clinic, where I
+        assist in patient management and chemotherapy planning. Alongside the clinic,
+        I identify non-coding RNAs that work as diagnostic and prognostic biomarkers
+        in human tumours.
+      </p>
+      <p>
+        My training spans cancer biology, molecular genetics and bioinformatics &mdash;
+        bulk RNA-seq and single-cell analysis in particular. What holds those threads
+        together is a preference for questions that reach a patient: a marker that
+        shortens time to diagnosis, or an explanation for why one regimen fails where
+        another holds.
+      </p>
+      <p>
+        Outside medicine I directed theatre for three years at my university, which
+        taught me more about running a research group than any methods course did.
+      </p>
+    </div>
   </div>
+</section>
 
-  <!-- Review Articles -->
-  <div class="pub__block">
-    <h3 class="pub__title">
-      <i class="ri-book-2-line"></i> Review Articles
-    </h3>
-
-    <ol class="pub__list">
-      <li>
-
-         <a
-    href="https://doi.org/10.1186/s12964-022-00840-4"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-       
-
-        <strong>Maharati A</strong>, Zanguei AS, Khalili-Tanha G, Moghbeli M. MicroRNAs as the critical regulators of tyrosine kinase inhibitors resistance in lung tumor cells. <em>Cell Commun Signal</em>. <span class="pub__tag">IF: 8.41</span>
-        </a>
+<section class="section section--tint" id="research">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">02 &mdash; Research</p>
+      <h2 class="head__title">Focus &amp; methods</h2>
+    </div>
+    <ul class="cards">
+      <li class="card reveal">
+        <h3 class="card__title">Non-coding RNA biomarkers</h3>
+        <p>miRNAs and lncRNAs as diagnostic and prognostic markers across colorectal, renal, gastric, ovarian and breast tumours.</p>
       </li>
-
-
-      <li>
-
-        <a
-    href="https://doi.org/10.1186/s12967-023-04434-7"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-        
-        <strong>Maharati A</strong>, Moghbeli M. Long non-coding RNAs as the critical regulators of PI3K/AKT, TGF-β, and MAPK signaling pathways during breast tumor progression. <em>J Transl Med</em>. <span class="pub__tag">IF: 8.48</span>
-      </a>
+      <li class="card reveal">
+        <h3 class="card__title">Therapy resistance</h3>
+        <p>Mechanisms behind cisplatin, paclitaxel, doxorubicin, gemcitabine and TKI resistance &mdash; PI3K/AKT, MAPK, WNT, NOTCH and forkhead regulation.</p>
       </li>
-
-      <li>
-        <a
-    href="https://doi.org/10.1186/s12964-023-01225-x"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        <strong>Maharati A</strong>, Moghbeli M. PI3K/AKT signaling pathway as a critical regulator of epithelial-mesenchymal transition in colorectal tumor cells. <em>Cell Commun Signal</em>. <span class="pub__tag">IF: 8.41</span>
-      
-      </a>
+      <li class="card reveal">
+        <h3 class="card__title">Bioinformatics</h3>
+        <p>Bulk RNA-seq and single-cell workflows: QC, integration, clustering, differential expression and cell&ndash;cell interaction in the tumour microenvironment.</p>
       </li>
-
-
-      <li>
-        <a
-    href="https://doi.org/10.1186/s12935-023-03004-7"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-        
-        <strong>Maharati A</strong>, Samsami Y, Latifi H, Tolue Ghasaban F, Moghbeli M. Role of the long non-coding RNAs in regulation of Gemcitabine response in tumor cells. <em>Cancer Cell Int</em>. <span class="pub__tag">IF: 6.4</span>
-      
-      
-      </a>
+      <li class="card reveal">
+        <h3 class="card__title">Wet lab</h3>
+        <p>RNA/DNA extraction, cDNA synthesis, real-time PCR, cell culture, western blot, MTT assay, biobank design and curation.</p>
       </li>
-
-
-      
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.ejphar.2023.175937"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-        
-        <strong>Maharati A</strong>, Moghbeli M. Forkhead box proteins as the critical regulators of cisplatin response in tumor cells. <em>Eur J Pharmacol</em>. <span class="pub__tag">IF: 5.1</span>
-      </a>
-      
+      <li class="card reveal">
+        <h3 class="card__title">Analysis &amp; tooling</h3>
+        <p>R (advanced), Linux, SPSS. Systematic review and meta-analysis methodology.</p>
       </li>
-
-      <li>
-        <a
-    href="https://doi.org/10.1007/s10565-025-10092-w"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-        
-
-        Pooria Salehi-Sangani, <strong>Amirhosein Maharati</strong>, Bahareh Payami, Mohsen Aliakbarian, Mohammad Reza Abbaszadegan. HypoxamiRs in pancreatic cancer: Master regulators of the hypoxic tumor microenvironment. <em>Cell Biology and Toxicology</em>. <span class="pub__tag">IF: 5.9</span>
-      </a>
+      <li class="card reveal">
+        <h3 class="card__title">Clinical oncology</h3>
+        <p>Patient management, chemotherapy planning, evidence-based practice and multidisciplinary tumour board collaboration.</p>
       </li>
-
-      <li>
-
-        <a
-    href="https://doi.org/10.1016/j.jff.2023.105862"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-        
-        
-
-        Iman Akhlaghipour, Arya Nasimi Shad, Vahid Reza Askari, <strong>Amirhosein Maharati</strong>, Vafa Baradaran Rahimi. How caffeic acid and its derivatives combat diabetes and its complications: A systematic review. <em>Journal of Functional Foods</em>. <span class="pub__tag">IF: 5.2</span>
-      </a>
-      </li>
-
-      <li>
-
-        <a
-    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10703645/"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        
-
-        <strong>Maharati A</strong>, Akhlaghipour I, Taghehchian N, Farshchian Yazdi Z, Moghbeli M. Role of microRNA-494 in tumor progression. <em>Am J Transl Res</em>. <span class="pub__tag">IF: 3.9</span>
-      </a>
-      </li>
-
-
-      <li>
-
-
-        <a
-    href="https://doi.org/10.1016/j.heliyon.2024.e41483"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-        
-
-        <strong>Amirhosein Maharati</strong>, Yasamin Rajabloo, Meysam Moghbeli. Molecular mechanisms of mTOR-mediated cisplatin response in tumor cells. <em>Heliyon</em>. <span class="pub__tag">IF: 3.6</span>
-      </a>
-      </li>
-      <li>
-        <a
-    href="https://doi.org/10.1186/s13008-023-00093-8"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-        <strong>Maharati A</strong>, Moghbeli M. Role of microRNAs in regulation of doxorubicin and paclitaxel responses in lung tumor cells. <em>Cell Div</em>. <span class="pub__tag">IF: 2.8</span>
-        </a>
-      </li>
-
-      <li>
-
-        <a
-    href="https://doi.org/10.1007/s10735-023-10159-0"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        <strong>Maharati A</strong>, Tolue Ghasaban F, Akhlaghipour I, Taghehchian N, Zangouei AS, Moghbeli M.
-        
-        MicroRNA-495: a therapeutic and diagnostic tumor marker. <em>J Mol Histol</em>. <span class="pub__tag">IF: 3.1</span>
-      
-      </a>
-      </li>
-
-        
-
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.prp.2024.155344"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        <strong>Amirhosein Maharati</strong>, Meysam Moghbeli. Role of microRNA-505 during tumor progression and metastasis.
-         <em>Pathology-Research and Practice</em>. <span class="pub__tag">IF: 3.2</span>
-        </a>
-        </li>
-
-      <li>
-
-
-        <a
-    href="https://doi.org/10.1016/j.gene.2022.147082"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Alsadat Mahmoudian R, <strong>Amirhosein Maharati</strong>, Mahmoudian P, et al. The therapeutic potential value of Cancer-testis antigens in immunotherapy of gastric cancer.
-         <em>Gene</em>. <span class="pub__tag">IF: 3.9</span> <span class="pub__tag">co-first author</span>
-        </a>
-        </li>
-
-
-
-      <li>
-        <a
-    href="https://doi.org/10.1186/s12935-023-02925-7"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Tolue Ghasaban F, <strong>Maharati A</strong>, Akhlaghipour I, Moghbeli M. MicroRNAs as the critical regulators of autophagy-mediated cisplatin response in tumor cells.
-         <em>Cancer Cell Int</em>. <span class="pub__tag">IF: 6.4</span>
-        </a>
-        </li>
-
-      <li>
-<a
-    href="https://doi.org/10.1186/s12935-023-03086-3"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Taghehchian N, <strong>Maharati A</strong>, Akhlaghipour I, Zangouei AS, Moghbeli M. PRC2 mediated KLF2 down regulation: a therapeutic and diagnostic axis during tumor progression.
-         <em>Cancer Cell Int</em>. <span class="pub__tag">IF: 6.4</span>
-        </a>
-        </li>
-
-      <li>
-<a
-    href="https://doi.org/10.1186/s12935-023-03010-9"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Tolue Ghasaban F, <strong>Maharati A</strong>, Zangouei AS, Zangooie A, Moghbeli M. MicroRNAs as the pivotal regulators of cisplatin resistance in head and neck cancers.
-         <em>Cancer Cell Int</em>. <span class="pub__tag">IF: 6.4</span>
-        </a>
-        </li>
-
-      <li>
-<a
-    href="https://doi.org/10.1016/j.prp.2023.154913"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-
-        
-
-        Fanoodi A, <strong>Maharati A</strong>, Akhlaghipour I, Rahimi HR, Moghbeli M. MicroRNAs as the critical regulators of tumor angiogenesis in liver cancer. 
-        <em>Pathol Res Pract</em>. <span class="pub__tag">IF: 3.3</span>
-      </a>
-      </li>
-
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.ijbiomac.2023.125995"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Moghbeli M, Taghehchian N, Akhlaghipour I, Samsami Y, <strong>Maharati A</strong>.
-         Role of forkhead box proteins in regulation of doxorubicin and paclitaxel responses in tumor cells: A comprehensive review.
-          <em>Int J Biol Macromol</em>. <span class="pub__tag">IF: 8.0</span>
-        
-        </a>
-        </li>
-
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.ijbiomac.2024.132347"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Arya Nasimi Shad, Ali Fanoodi, <strong>Amirhosein Maharati</strong>, Iman Akhlaghipour, Amir Reza Bina, Ehsan Saburi, Fatemeh Forouzanfar, Meysam Moghbeli. Role of microRNAs in tumor progression by regulation of kinesin motor proteins.
-         <em>Int J Biol Macromol</em>. <span class="pub__tag">IF: 8.5</span>
-        </a>
-        </li>
-
-
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.prp.2023.154672"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Taghehchian N, Samsami Y, <strong>Maharati A</strong>, Zangouei AS, Boroumand-Noughabi S, Moghbeli M. 
-        Molecular biology of microRNA-342 during tumor progression and invasion. 
-        <em>Pathol Res Pract</em>. <span class="pub__tag">IF: 3.3</span>
-      </a>
-      </li>
-
-
-
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.ijbiomac.2022.11.236"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Iman Akhlaghipour, Negin Taghehchian, Amir Sadra Zangouei, <strong>Amirhosein Maharati</strong>, Reihaneh Alsadat Mahmoudian, Ehsan Saburi, Meysam Moghbeli. 
-        MicroRNA-377: A therapeutic and diagnostic tumor marker.
-         <em>Int J Biol Macromol</em>. <span class="pub__tag">IF: 8.0</span>
-         </a>
-        </li>
-
-
-      <li>
-
-        <a
-    href="https://doi.org/10.1016/j.prp.2023.154538"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Nasimi Shad A, Fanoodi A, <strong>Maharati A</strong>, Akhlaghipour I, Moghbeli M.
-         Molecular mechanisms of microRNA-301a during tumor progression and metastasis. 
-         <em>Pathol Res Pract</em>. <span class="pub__tag">IF: 3.3</span>
-         </a>
-        </li>
-
-
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.mrfmmm.2024.111874"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Malihe Lotfi, <strong>Amirhosein Maharati</strong>, Amir Abbas Hamidi, Negin Taghehchian, Meysam Moghbeli. MicroRNA-532 as a probable diagnostic and therapeutic marker in cancer patients. 
-        <em>Mutation Research</em>. <span class="pub__tag">IF: 1.9</span>
-      </a>
-      </li>
-
-      <li>
-        <a
-    href="https://doi.org/10.1016/j.procbio.2023.05.024"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Faezeh Tolue Ghasaban, Iman Akhlaghipour, Negin Taghehchian, <strong>Amirhosein Maharati</strong>, Bahram Memar, Meysam Moghbeli.
-         MicroRNA-185: A non-invasive diagnostic and prognostic tumor marker. <em>Process Biochemistry</em>. <span class="pub__tag">IF: 4.8</span>
-        </a>
-        </li>
-    </ol>
-  </div>
-
-  <!-- Case Reports -->
-  <div class="pub__block">
-    <h3 class="pub__title">
-      <i class="ri-file-paper-2-line"></i> Case Reports
-    </h3>
-
-    <ol class="pub__list">
-      <li>
-        <a
-    href="https://doi.org/10.1186/s13256-023-03753-z"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Allahyari A, <strong>Maharati A</strong>, Jafari-Nozad AM, Zangooie A. 
-        Prostate cancer, chronic myelogenous leukemia and multiple myeloma in a single patient: a case report and review of the literature. 
-        <em>J Med Case Rep</em>. <span class="pub__tag">co-responding author</span>
-        </a>
-      </li>
-
-      <li>
- <a
-    href="https://doi.org/10.1186/s13256-025-05338-4"
-    target="_blank"
-    rel="noopener"
-    class="pub__link"
-  >
-        
-
-        Alireza Zangooie, Zahra Moradi, Reza Asgari, <strong>Amirhosein Maharati</strong>, Zahra Salehi, Abolghasem Allahyari. 
-        Essential thrombocythemia as an initial presentation of polyneuropathy, organomegaly, endocrinopathy, M-protein, skin changes syndrome with complete response to the bortezomib, cyclophosphamide, dexamethasone regimen: a case report.
-         <span class="pub__tag">IF: 0.9</span>
-        </a>
-        </li>
-
-      <li>
-        <a href="https://doi.org/10.1186/s13027-026-00755-6" target="_blank" rel="noopener" class="pub__link">
-        <strong>Amirhosein Maharati</strong>, Alireza Zangooie, Maryam Sardarkhani Eydgahi, Hoda Haghshenas, Zahra Eghbali, Naser Tayyebi Meibodi, Zahra Salehi, Abolghasem Allahyari.
-        Concurrent sigmoid colon adenocarcinoma presenting with cutaneous adult T-cell leukemia/lymphoma: a rare case report.
-        <em>Infectious Agents and Cancer</em>. <span class="pub__tag">IF: 2.6</span>
-        </a>
-      </li>
-    </ol>
-  </div>
-
-  <!-- Under Review -->
-  <div class="pub__block">
-    <h3 class="pub__title">
-      <i class="ri-time-line"></i> Under Review / Ongoing Projects
-    </h3>
-
-    <ul class="pub__list pub__list--bullets">
-      <li>GFPT2 as a critical regulator of CAFs–Tumor interaction in the TME of colorectal cancer (single cell)</li>
-      <li>Critical regulators of CAFs–Tumor interaction through PI3K/AKT in the TME of RCC (single cell)</li>
     </ul>
   </div>
 </section>
 
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">03 &mdash; Experience</p>
+      <h2 class="head__title">Positions</h2>
+    </div>
 
-    <section class="section__container contact__container" id="contact">
-      <div class="logo">A</div>
-      <h2 class="section__header">Let's Talk With Me!</h2>
-      <p class="section__description">
-        Check my Linkedin, Google Scholar and Github pages.
+    <div class="group">
+      <h3 class="group__title">Clinical</h3>
+      <ol class="timeline">
+        <li class="entry reveal">
+          <p class="entry__when">Jun 2025 &mdash; Present</p>
+          <div class="entry__body">
+            <h4 class="entry__role">Oncologist Assistant</h4>
+            <p class="entry__org">Shafa Oncology &amp; Chemotherapy Center &middot; Dr. Allahyari</p>
+            <ul class="entry__points">
+              <li>Oncology patient management, over 1,000 clinical hours</li>
+              <li>Treatment planning and prescription under supervision</li>
+              <li>Evidence-based practice and multidisciplinary collaboration</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry reveal">
+          <p class="entry__when">Oct 2023 &mdash; 2025</p>
+          <div class="entry__body">
+            <h4 class="entry__role">Medical Intern</h4>
+            <p class="entry__org">Imam Reza &amp; Ghaem Hospitals</p>
+            <ul class="entry__points">
+              <li>Rotating clinical practice and inpatient care</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="group">
+      <h3 class="group__title">Research</h3>
+      <ol class="timeline">
+        <li class="entry reveal">
+          <p class="entry__when">Jan 2020 &mdash; 2025</p>
+          <div class="entry__body">
+            <h4 class="entry__role">Research Assistant</h4>
+            <p class="entry__org">Medical Genetics Research Center (MGRC)</p>
+            <ul class="entry__points">
+              <li>Developed tumour biobanks for colorectal, gastric, oesophageal squamous cell, papillary thyroid and ovarian cancer</li>
+              <li>Led bulk RNA-seq and single-cell sequencing data analysis across MGRC projects</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry reveal">
+          <p class="entry__when">Apr 2025 &mdash; Present</p>
+          <div class="entry__body">
+            <h4 class="entry__role">Research Fellow</h4>
+            <p class="entry__org">Endoscopic &amp; Minimally Invasive Surgery Research Center</p>
+            <ul class="entry__points">
+              <li>Systematic review and meta-analysis</li>
+              <li>Linking basic science output to clinical questions</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry reveal">
+          <p class="entry__when">2023 &mdash; Present</p>
+          <div class="entry__body">
+            <h4 class="entry__role">Journal Reviewer</h4>
+            <p class="entry__org">Springer Nature &amp; Wiley</p>
+            <ul class="entry__points">
+              <li>Reviewed 30+ original and review articles</li>
+              <li>Cancer genetics, non-coding RNA, signalling pathways, drug resistance</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="group">
+      <h3 class="group__title">Beyond the lab</h3>
+      <ol class="timeline">
+        <li class="entry reveal">
+          <p class="entry__when">Jan 2019 &mdash; Mar 2022</p>
+          <div class="entry__body">
+            <h4 class="entry__role">Theatre Director</h4>
+            <p class="entry__org">Mashhad University of Medical Sciences Theatre Center</p>
+            <ul class="entry__points">
+              <li>Directed three productions and performed in one</li>
+            </ul>
+          </div>
+        </li>
+        <li class="entry reveal">
+          <p class="entry__when">Oct 2022 &mdash; Present</p>
+          <div class="entry__body">
+            <h4 class="entry__role">Fitness Trainer</h4>
+            <p class="entry__org">Iran Bodybuilding and Fitness Federation</p>
+            <ul class="entry__points">
+              <li>Level 3 Certificate in Coaching</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="record">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">04 &mdash; Record</p>
+      <h2 class="head__title">Education, awards &amp; teaching</h2>
+    </div>
+
+    <div class="record">
+      <div class="record__col">
+        <h3 class="record__head">Education</h3>
+        <ul class="stack">
+          <li class="item reveal">
+            <p class="item__when">2018 &mdash; 2025</p>
+            <h4 class="item__title">Doctor of Medicine (MD)</h4>
+            <p class="item__org">Mashhad University of Medical Sciences, Mashhad, Iran</p>
+            <p class="item__note">GPA 18.12 / 20 &nbsp;&middot;&nbsp; 3.84 / 4</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="record__col">
+        <h3 class="record__head">Awards</h3>
+        <ul class="stack">
+          <li class="item item--award reveal">
+            <p class="item__when">Dec 2025</p>
+            <h4 class="item__title">Top Researcher of the Country, Medical Sciences</h4>
+            <p class="item__org">Ministry of Health and Medical Education</p>
+          </li>
+          <li class="item item--award reveal">
+            <p class="item__when">Dec 2023</p>
+            <h4 class="item__title">Annual Top Researcher Award</h4>
+            <p class="item__org">Mashhad University of Medical Sciences</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="record__col">
+        <h3 class="record__head">Courses &amp; talks</h3>
+        <ul class="stack">
+          <li class="item reveal">
+            <p class="item__when">Nov 2025</p>
+            <h4 class="item__title">AI in medicine and urology</h4>
+            <p class="item__org">National Congress of Endourology &middot; invited talk</p>
+          </li>
+          <li class="item reveal">
+            <p class="item__when">Aug 2025</p>
+            <h4 class="item__title">RNA extraction, cDNA synthesis &amp; real-time PCR</h4>
+            <p class="item__org">Medical Genetics Research Group &middot; course instructor</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="publications">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">05 &mdash; Publications</p>
+      <h2 class="head__title">Peer-reviewed record</h2>
+      <p class="head__note">
+        Bold marks my authorship. Follow any entry to its DOI.
+        Full list on <a href="https://scholar.google.com/citations?hl=en&amp;user=7FMbGUwAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">Google Scholar</a>.
       </p>
-    <div class="contact__socials">
-  <a href="mailto:Maharatiamir666@gmail.com"><i class="ri-mail-line"></i></a>
-  <a href="https://www.linkedin.com/in/amir-hosein-maharati-9b43b4200/"><i class="ri-linkedin-fill"></i></a>
-  <a href="https://scholar.google.com/citations?hl=en&user=7FMbGUwAAAAJ&view_op=list_works" target="_blank">
-    <i class="ri-graduation-cap-line"></i>
-  </a>
-  <a href="https://github.com/amirmaharati"><i class="ri-github-fill"></i></a>
-  
-</div>
+    </div>
 
-    </section>
-    <footer class="footer">
-      Copyright © 2026 Amir H. Maharati. All rights reserved.
-    </footer>
+    <div class="filters" role="group" aria-label="Filter publications by type">
+      <button class="chip is-on" type="button" data-filter="all" aria-pressed="true">All <span class="chip__n">34</span></button>
+      <button class="chip" type="button" data-filter="original" aria-pressed="false">Original <span class="chip__n">7</span></button>
+      <button class="chip" type="button" data-filter="review" aria-pressed="false">Reviews <span class="chip__n">24</span></button>
+      <button class="chip" type="button" data-filter="case" aria-pressed="false">Case reports <span class="chip__n">3</span></button>
+    </div>
+    <p class="sr-only" role="status" id="filter-status"></p>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-  </body>
+    <ol class="pubs" id="pubs">
+
+      <li class="pub" data-type="original">
+        <p class="pub__cite">Rezaei Z, Dastjerdi K, Allahyari A, ShahidSales S, Talebian S, <b class="me">Maharati A</b>, Zangooie A, Zangouei AS, Sadri F, Sargazi S. Plasma microRNA-195, &minus;34c and &minus;1246 as novel biomarkers for the diagnosis of trastuzumab-resistant HER2-positive breast cancer patients.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Toxicol Appl Pharmacol</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 4.4</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.taap.2023.116652" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="original">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Taghehchian N, Taghavinia F, Golshan A, Aarabi A, Abbaszadegan MR, Moghbeli M. LINC01322 may serve as a potential diagnostic marker for advanced stage tumors in renal cell carcinoma patients eligible for total nephrectomy.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Biochem Biophys Rep</cite>
+          <span class="pub__year">2024</span>
+          <span class="pub__if">IF 2.2</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.bbrep.2024.101843" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="original">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Malekifar MJ, Abdollahi A, Taghehchian N, Sharif S, Aarabi A, Lotfi M, Etezadpour M, Abbaszadegan MR. CKAP2, miR-941, miR-548 and LINC02577 as biomarkers for early diagnosis in colorectal cancer.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Scientific Reports</cite>
+          <span class="pub__year">2025</span>
+          <span class="pub__if">IF 3.9</span>
+          <a class="pub__doi" href="https://doi.org/10.1038/s41598-025-30520-5" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="original">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Taghavinia F, Golshan A, Azimi Kordiani T, Moghbeli M. LINC01913 and LINC01389 as novel diagnostic tumor markers for early-stage renal cell carcinoma.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cancer Treat Res Commun</cite>
+          <span class="pub__year">2025</span>
+          <span class="pub__if">IF 2.9</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.ctarc.2025.101090" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="original">
+        <p class="pub__cite">Taghehchian N, <b class="me">Maharati A</b>, Taghavinia F, Golshan A, Salarzadeh S, Moghbeli M. LINC00332 as a potential diagnostic marker for low-grade tumors in renal cell carcinoma patients.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">BMC Urology</cite>
+          <span class="pub__year">2025</span>
+          <span class="pub__if">IF 1.6</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12894-025-01998-y" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="original">
+        <p class="pub__cite">Khajavirad MH, <b class="me">Maharati A</b>, Taghehchian N, Taghavinia F, Moghbeli M. Role of VOPP1 in regulation of paclitaxel response and the EMT process during ovarian tumor progression.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Mol Biol Res Commun</cite>
+          <span class="pub__year">2025</span>
+          <span class="pub__if">IF 1.75</span>
+          <a class="pub__doi" href="https://doi.org/10.22099/mbrc.2025.52515.2107" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="original">
+        <p class="pub__cite">Tolue Ghasaban F, Taghehchian N, <b class="me">Maharati A</b>, Basirat Z, Moghbeli M. Role of KCTD12 in ovarian tumor progression and chemoresistance via regulation of WNT and NOTCH pathways.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Indian J Gynecol Oncol</cite>
+          <span class="pub__year">2026</span>
+          <a class="pub__doi" href="https://doi.org/10.1007/s40944-026-01093-6" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Zangouei AS, Khalili-Tanha G, Moghbeli M. MicroRNAs as critical regulators of tyrosine kinase inhibitor resistance in lung tumor cells.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cell Commun Signal</cite>
+          <span class="pub__year">2022</span>
+          <span class="pub__if">IF 8.41</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12964-022-00840-4" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Alsadat Mahmoudian R, <b class="me">Maharati A</b>, Mahmoudian P, et al. The therapeutic potential of cancer-testis antigens in immunotherapy of gastric cancer.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Gene</cite>
+          <span class="pub__year">2022</span>
+          <span class="pub__if">IF 3.9</span>
+          <span class="pub__role">Co-first author</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.gene.2022.147082" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Akhlaghipour I, Taghehchian N, Zangouei AS, <b class="me">Maharati A</b>, Alsadat Mahmoudian R, Saburi E, Moghbeli M. MicroRNA-377: a therapeutic and diagnostic tumor marker.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Int J Biol Macromol</cite>
+          <span class="pub__year">2022</span>
+          <span class="pub__if">IF 8.0</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.ijbiomac.2022.11.236" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Moghbeli M. Long non-coding RNAs as critical regulators of PI3K/AKT, TGF-&beta; and MAPK signaling pathways during breast tumor progression.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">J Transl Med</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 8.48</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12967-023-04434-7" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Moghbeli M. PI3K/AKT signaling pathway as a critical regulator of epithelial&ndash;mesenchymal transition in colorectal tumor cells.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cell Commun Signal</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 8.41</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12964-023-01225-x" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Samsami Y, Latifi H, Tolue Ghasaban F, Moghbeli M. Role of long non-coding RNAs in the regulation of gemcitabine response in tumor cells.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cancer Cell Int</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 6.4</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12935-023-03004-7" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Moghbeli M. Forkhead box proteins as critical regulators of cisplatin response in tumor cells.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Eur J Pharmacol</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 5.1</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.ejphar.2023.175937" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Akhlaghipour I, Taghehchian N, Farshchian Yazdi Z, Moghbeli M. Role of microRNA-494 in tumor progression.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Am J Transl Res</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 3.9</span>
+          <a class="pub__doi" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10703645/" target="_blank" rel="noopener">PMC <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Moghbeli M. Role of microRNAs in the regulation of doxorubicin and paclitaxel responses in lung tumor cells.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cell Division</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 2.8</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s13008-023-00093-8" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Tolue Ghasaban F, Akhlaghipour I, Taghehchian N, Zangouei AS, Moghbeli M. MicroRNA-495: a therapeutic and diagnostic tumor marker.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">J Mol Histol</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 3.1</span>
+          <a class="pub__doi" href="https://doi.org/10.1007/s10735-023-10159-0" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Akhlaghipour I, Nasimi Shad A, Askari VR, <b class="me">Maharati A</b>, Baradaran Rahimi V. How caffeic acid and its derivatives combat diabetes and its complications: a systematic review.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">J Funct Foods</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 5.2</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.jff.2023.105862" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Tolue Ghasaban F, <b class="me">Maharati A</b>, Akhlaghipour I, Moghbeli M. MicroRNAs as critical regulators of autophagy-mediated cisplatin response in tumor cells.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cancer Cell Int</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 6.4</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12935-023-02925-7" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Taghehchian N, <b class="me">Maharati A</b>, Akhlaghipour I, Zangouei AS, Moghbeli M. PRC2-mediated KLF2 downregulation: a therapeutic and diagnostic axis during tumor progression.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cancer Cell Int</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 6.4</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12935-023-03086-3" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Tolue Ghasaban F, <b class="me">Maharati A</b>, Zangouei AS, Zangooie A, Moghbeli M. MicroRNAs as pivotal regulators of cisplatin resistance in head and neck cancers.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cancer Cell Int</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 6.4</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s12935-023-03010-9" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Fanoodi A, <b class="me">Maharati A</b>, Akhlaghipour I, Rahimi HR, Moghbeli M. MicroRNAs as critical regulators of tumor angiogenesis in liver cancer.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Pathol Res Pract</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 3.3</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.prp.2023.154913" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Moghbeli M, Taghehchian N, Akhlaghipour I, Samsami Y, <b class="me">Maharati A</b>. Role of forkhead box proteins in regulating doxorubicin and paclitaxel responses in tumor cells: a comprehensive review.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Int J Biol Macromol</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 8.0</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.ijbiomac.2023.125995" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Taghehchian N, Samsami Y, <b class="me">Maharati A</b>, Zangouei AS, Boroumand-Noughabi S, Moghbeli M. Molecular biology of microRNA-342 during tumor progression and invasion.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Pathol Res Pract</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 3.3</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.prp.2023.154672" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Nasimi Shad A, Fanoodi A, <b class="me">Maharati A</b>, Akhlaghipour I, Moghbeli M. Molecular mechanisms of microRNA-301a during tumor progression and metastasis.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Pathol Res Pract</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 3.3</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.prp.2023.154538" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Tolue Ghasaban F, Akhlaghipour I, Taghehchian N, <b class="me">Maharati A</b>, Memar B, Moghbeli M. MicroRNA-185: a non-invasive diagnostic and prognostic tumor marker.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Process Biochem</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__if">IF 4.8</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.procbio.2023.05.024" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Moghbeli M. Role of microRNA-505 during tumor progression and metastasis.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Pathol Res Pract</cite>
+          <span class="pub__year">2024</span>
+          <span class="pub__if">IF 3.2</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.prp.2024.155344" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Nasimi Shad A, Fanoodi A, <b class="me">Maharati A</b>, Akhlaghipour I, Bina AR, Saburi E, Forouzanfar F, Moghbeli M. Role of microRNAs in tumor progression through regulation of kinesin motor proteins.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Int J Biol Macromol</cite>
+          <span class="pub__year">2024</span>
+          <span class="pub__if">IF 8.5</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.ijbiomac.2024.132347" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Lotfi M, <b class="me">Maharati A</b>, Hamidi AA, Taghehchian N, Moghbeli M. MicroRNA-532 as a probable diagnostic and therapeutic marker in cancer patients.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Mutat Res</cite>
+          <span class="pub__year">2024</span>
+          <span class="pub__if">IF 1.9</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.mrfmmm.2024.111874" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Rajabloo Y, Moghbeli M. Molecular mechanisms of mTOR-mediated cisplatin response in tumor cells.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Heliyon</cite>
+          <span class="pub__year">2025</span>
+          <span class="pub__if">IF 3.6</span>
+          <a class="pub__doi" href="https://doi.org/10.1016/j.heliyon.2024.e41483" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="review">
+        <p class="pub__cite">Salehi-Sangani P, <b class="me">Maharati A</b>, Payami B, Aliakbarian M, Abbaszadegan MR. HypoxamiRs in pancreatic cancer: master regulators of the hypoxic tumor microenvironment.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Cell Biol Toxicol</cite>
+          <span class="pub__year">2025</span>
+          <span class="pub__if">IF 5.9</span>
+          <a class="pub__doi" href="https://doi.org/10.1007/s10565-025-10092-w" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="case">
+        <p class="pub__cite">Allahyari A, <b class="me">Maharati A</b>, Jafari-Nozad AM, Zangooie A. Prostate cancer, chronic myelogenous leukemia and multiple myeloma in a single patient: a case report and review of the literature.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">J Med Case Rep</cite>
+          <span class="pub__year">2023</span>
+          <span class="pub__role">Co-corresponding author</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s13256-023-03753-z" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="case">
+        <p class="pub__cite">Zangooie A, Moradi Z, Asgari R, <b class="me">Maharati A</b>, Salehi Z, Allahyari A. Essential thrombocythemia as an initial presentation of POEMS syndrome with complete response to a bortezomib, cyclophosphamide and dexamethasone regimen: a case report.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">J Med Case Rep</cite>
+          <span class="pub__year">2025</span>
+          <span class="pub__if">IF 0.9</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s13256-025-05338-4" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+      <li class="pub" data-type="case">
+        <p class="pub__cite"><b class="me">Maharati A</b>, Zangooie A, Sardarkhani Eydgahi M, Haghshenas H, Eghbali Z, Tayyebi Meibodi N, Salehi Z, Allahyari A. Concurrent sigmoid colon adenocarcinoma presenting with cutaneous adult T-cell leukemia/lymphoma: a rare case report.</p>
+        <p class="pub__meta">
+          <cite class="pub__journal">Infect Agent Cancer</cite>
+          <span class="pub__year">2026</span>
+          <span class="pub__if">IF 2.6</span>
+          <a class="pub__doi" href="https://doi.org/10.1186/s13027-026-00755-6" target="_blank" rel="noopener">DOI <span aria-hidden="true">&#8599;</span></a>
+        </p>
+      </li>
+
+    </ol>
+
+    <div class="ongoing reveal">
+      <h3 class="ongoing__title">Under review &amp; in progress</h3>
+      <ul class="ongoing__list">
+        <li>GFPT2 as a critical regulator of CAF&ndash;tumour interaction in the colorectal cancer microenvironment <span class="tag">single-cell</span></li>
+        <li>Critical regulators of CAF&ndash;tumour interaction through PI3K/AKT in the renal cell carcinoma microenvironment <span class="tag">single-cell</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact__inner">
+    <p class="eyebrow eyebrow--light">06 &mdash; Contact</p>
+    <h2 class="contact__title">Open to collaboration and PhD positions</h2>
+    <p class="contact__lede">
+      Happy to discuss non-coding RNA projects, single-cell datasets, or joint reviews.
+      Email is the fastest way to reach me.
+    </p>
+
+    <a class="contact__mail" href="mailto:Maharatiamir666@gmail.com">Maharatiamir666@gmail.com</a>
+
+    <ul class="contact__links">
+      <li><a href="https://scholar.google.com/citations?hl=en&amp;user=7FMbGUwAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">Google Scholar <span class="ext" aria-hidden="true">&#8599;</span></a></li>
+      <li><a href="https://www.linkedin.com/in/amir-hosein-maharati-9b43b4200/" target="_blank" rel="noopener">LinkedIn <span class="ext" aria-hidden="true">&#8599;</span></a></li>
+      <li><a href="https://github.com/amirmaharati" target="_blank" rel="noopener">GitHub <span class="ext" aria-hidden="true">&#8599;</span></a></li>
+      <!-- TODO: add your ORCID iD here — https://orcid.org/register -->
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>&copy; <span id="year">2026</span> Amir H. Maharati</p>
+    <p>Mashhad, Iran</p>
+    <p><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Amir Hosein Maharati",
+  "honorificSuffix": "MD",
+  "jobTitle": "Medical Doctor and Cancer Researcher",
+  "url": "https://amirmaharati.github.io/",
+  "email": "mailto:Maharatiamir666@gmail.com",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Mashhad University of Medical Sciences"
+  },
+  "knowsAbout": [
+    "Non-coding RNA",
+    "Cancer biomarkers",
+    "Clinical oncology",
+    "RNA sequencing",
+    "Single-cell analysis",
+    "Bioinformatics"
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=7FMbGUwAAAAJ",
+    "https://www.linkedin.com/in/amir-hosein-maharati-9b43b4200/",
+    "https://github.com/amirmaharati"
+  ]
+}
+</script>
+
+<script src="main.js" defer></script>
+</body>
 </html>
