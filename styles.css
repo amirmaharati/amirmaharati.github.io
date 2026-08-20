@@ -1,8 +1,5 @@
 /* ============================================================
-   Amir H. Maharati — personal site
-   Palette is drawn from histology: hematoxylin violet-ink for
-   structure and interaction, eosin red reserved for a single
-   job (marking my own name in an author list).
+   Amir H. Maharati 
    ============================================================ */
 
 /* ---------- 1. Tokens ---------- */
@@ -904,16 +901,17 @@ cite { font-style: normal; }
 .footer a:hover { border-bottom-color: currentColor; }
 
 /* ---------- 14. Motion ----------
-   Rest state is VISIBLE. The hidden state only exists once JS has
-   confirmed it is running, so a blocked CDN or a JS error can never
-   leave the page blank. */
+   The rest state is VISIBLE. The hidden state is gated on
+   .motion-ready, which main.js sets only after it has booted and
+   armed its failsafe. If the script is stale, blocked, or throws,
+   this rule never applies and every section stays on screen. */
 
-.js .reveal {
+.motion-ready .reveal {
   opacity: 0;
   transform: translateY(18px);
 }
 
-.js .reveal.is-in {
+.motion-ready .reveal.is-in {
   opacity: 1;
   transform: none;
   transition: opacity var(--slow) var(--ease),
@@ -1019,7 +1017,7 @@ cite { font-style: normal; }
     transition-duration: 0.01ms !important;
   }
 
-  .js .reveal { opacity: 1; transform: none; }
+  .motion-ready .reveal { opacity: 1; transform: none; }
   .hero__frame { transform: none !important; }
 }
 
@@ -1031,5 +1029,5 @@ cite { font-style: normal; }
   .hero, .figures, .contact, .footer { background: #fff; color: #000; }
   .hero__name, .contact__title, .hero__lede, .figure__num { color: #000; }
   .pub { break-inside: avoid; }
-  .js .reveal { opacity: 1; transform: none; }
+  .motion-ready .reveal { opacity: 1; transform: none; }
 }
